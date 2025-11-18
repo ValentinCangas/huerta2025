@@ -5,7 +5,7 @@ import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/12
 const firebaseConfig = {
     apiKey: "AIzaSyCrB4xgCBRmpujDcvOOihSVZ6MIFOPE56M",
     authDomain: "proyectoclase1-2025.firebaseapp.com",
-    databaseURL: "https://proyectoclase1-2025-default-rtdb.firebaseio.com",
+    databaseURL: "https://huertamaxi2025-default-rtdb.firebaseio.com",
     projectId: "proyectoclase1-2025",
     storageBucket: "proyectoclase1-2025.firebasestorage.app",
     messagingSenderId: "822869341917",
@@ -15,14 +15,19 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+
+const refDatos = ref(db, '/');
+
+
 let parrafo = document.querySelector("h1");
 
-const refDatos = ref(db, "huerta");
+
 
 onValue(refDatos, (snapshot) => {
-    console.log(snapshot.val())
+    //console.log(snapshot.val())
     let huerta = snapshot.val()
-    parrafo.textContent = `La temperatura del suelo es de ${huerta.tempSuelo}°`
+    console.log(huerta)
+    parrafo.textContent = `La temperatura del suelo es de ${huerta.temperatura}°`
     
    
 })

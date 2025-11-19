@@ -1,0 +1,36 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    background: #e4f3ff; /* azul cielo muy claro */
+    font-family: Arial, sans-serif;
+    color: #003a5c; /* azul oscuro para buen contraste */
+    text-align: center;
+}
+
+/* Encabezado */
+h1 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: #007acc; /* azul cielo intenso */
+}
+
+/* Enlace estilo botón */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffffff;
+    color: #007acc;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #007acc;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #007acc;
+    color: white;
+}

@@ -1,3 +1,44 @@
-body{
-    justify-content: center;
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5fff5;        /* Blanco verdoso */
+    color: #1a4d1a;             /* Verde oscuro */
+}
+
+/* Contenedor principal */
+.form {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;        /* Blanco */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Título */
+h1.datos {
+    margin-bottom: 25px;
+    color: #0b6e0b;             /* Verde vibrante */
+}
+
+/* Enlaces */
+a {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    text-decoration: none;
+    background: #0b6e0b;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+a:hover {
+    background: #0e8e0e;        /* Verde más brillante */
+    transform: scale(1.05);
 }

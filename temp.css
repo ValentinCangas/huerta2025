@@ -2,35 +2,36 @@
 body {
     margin: 0;
     padding: 0;
-    background: #e4f3ff; /* azul cielo muy claro */
-    font-family: Arial, sans-serif;
-    color: #003a5c; /* azul oscuro para buen contraste */
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e1f5ff; 
+    color: #003b5c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
-/* Encabezado */
 h1 {
-    margin-top: 40px;
-    font-size: 2.5rem;
-    color: #007acc; /* azul cielo intenso */
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Enlace estilo botón */
 a {
-    display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
-    background: #ffffff;
-    color: #007acc;
     text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background: #4bb8ff; 
+    padding: 10px 20px;
     border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 2px solid #007acc;
     transition: 0.3s;
 }
 
 a:hover {
-    background: #007acc;
-    color: white;
+    background: #0094e0;
 }
+
+

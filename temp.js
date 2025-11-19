@@ -27,7 +27,7 @@ onValue(refDatos, (snapshot) => {
     //console.log(snapshot.val())
     let huerta = snapshot.val()
     console.log(huerta)
-    parrafo.textContent = `La temperatura del suelo es de ${huerta.temperatura}°`
+    parrafo.textContent = `La temperatura del aire es de ${huerta.temperatura}°`
     
    
 })
